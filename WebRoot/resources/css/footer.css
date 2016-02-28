@@ -1,0 +1,8 @@
+.foot { position: fixed; bottom: 0; left: 0; width: 100%; height: 60px; border: none; border-top: 1px solid #dedede; border-bottom: 1px solid #dedede; background-color: #fff; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; z-index: 97;}
+.foot li { float: left; width: 33.3333%; height: 60px; text-align: center;}
+.foot li p { line-height: 18px; margin-top: 3px; font-size: 1.4rem; color: #615868;}
+.index_icon, .friend_icon, .pig_farm_icon { margin-top: 6px;}
+.index_icon { width: 35px;}
+.friend_icon { width: 30px;}
+.pig_farm_icon { width: 27px;}
+.b_nav_active { color: #3cbd6d !important;}

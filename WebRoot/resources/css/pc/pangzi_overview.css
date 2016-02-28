@@ -1,0 +1,147 @@
+.f_l { float: left;}
+a{ font-family: "Microsoft Yahei","微软雅黑"; font-size:14px; color:#333;}
+a:hover{ text-decoration:none;}
+
+/*中间主题右半部分样式*/
+.my_pig_tit { border-right: 1px solid #c7d0cf;}
+.pig_tit { font-size: 22px;}
+/*commonality*/
+.z_fir, .z_sec, .z_thr { width: 980px; height: auto; background-color: #fff; overflow: hidden;}
+.z_fir_title, .z_sec_title, .z_thr_title { width: 971px; height: auto; margin: 10px auto; padding: 15px 0; padding-left: 9px; border-bottom: 2px solid #97be0d;}
+.z_green_point { width: 12px; height: 12px; margin-top: 9px; background: url(../../images/pc/green-point.png) no-repeat center center;}
+.z_fir_title_word { margin: 0 10px; font-size: 20px; color: #97be0d;}
+.z_mypig_body { width: 980px; height: auto; position: relative; float: right;}
+
+/*z_fir_content*/
+.z_fir_content { width: 950px; height: auto; margin: 15px auto;}
+.z_total_money { margin-left: 50px; font-size: 24px; color: #333;}
+.z_total_money span { margin: 0 10px; font-size: 40px; color: #615868;}
+.z_extract_btn { display: block; margin-left: 60px; padding: 8px 30px; font-size: 20px; color: #333; border: 1px solid #ccc; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; background-color: #f3f3f3;}
+
+/*z_sec_content*/
+.pig_row_card{float:left;}
+.pig_row_card .title{font-size:20px;color:#333;padding:22px 0 15px 40px;}
+.pig_row_card .list{padding-left:40px;}
+.pig_row_card .item{width:279px;height:162px;float:left;position:relative;margin:0 16px 16px 0;background:url(../../images/pc/card-1.png) no-repeat left top;color:#4d4d4d;}
+.pig_row_card .row_1{height:46px;line-height:46px;font-size:14px;overflow:hidden;}
+.pig_row_card .row_1 .s1{float:left;margin-left:12px;}
+.pig_row_card .row_1 .s2{margin-right: 5px;}
+.pig_row_card .row_1 .s3{margin-right: 8px;font-size: 13px;color: white;}
+.pig_row_card .row_1 img{width:15px;height:15px;vertical-align:top;margin:15px 6px 0 0;}
+/*.pig_row_card .row_2{padding:12px 0 0 78px;font-size:14px;}*/
+.pig_row_card .row_3, .pig_row_card .row_4 {position:absolute;bottom:19px;}
+.pig_row_card .row_3 { left:14px;}
+.pig_row_card .row_4 { right:14px;}
+.pig_row_card .row_3 a, .pig_row_card .row_4 a{color:#666;font-size:16px;}
+.pig_row_card .row_3 a:hover, .pig_row_card .row_4 a:hover{color:#FF6600;}
+.pig_row_card .add a{display:block;width:100%;height:100%;background:url(../../images/pc/card-2.png) no-repeat left top;}
+
+/*z_thr_content*/
+.z_thr { margin-bottom: 0px;}
+.pig_row_details{float:left;}
+.pig_row_details .det_table{width:949px;margin:14px 0 14px 18px;font-size:16px;}
+.pig_row_details .tab_head .tr{height:41px;line-height:41px;text-align:center;color:#333;background:#ccc;overflow:hidden;margin-bottom:1px;}
+.pig_row_details .tab_head .td{width:236px;float:left;border-right:1px solid #d5d5d5;}
+.pig_row_details .tab_body{border-top:1px solid #ccc;border-left:1px solid #ccc;}
+.pig_row_details .tab_body .tr{text-align:center;border-bottom:1px solid #ccc;overflow:hidden;color:#666;}
+.pig_row_details .tab_body .td{width:236px;height:45px;line-height:45px;float:left;border-right:1px solid #ccc;}
+.pig_row_details .tab_body .td_2{color:#FF6600;}
+.bg_f8f6f4 { background-color: #f8f6f4;}
+.z_friend_jilu { padding: 15px 0;}
+
+/*z_card_box*/
+.z_card_box { display: none; height: 320px; border: 7px solid #999; background-color: #fff;}
+.z_close_btn { float: right; margin: 20px 20px 0 0; width: 16px; height: 16px; background: url(../../images/pc/d-icons-close.png) no-repeat center center; cursor: pointer;}
+.z_unwrapping { width: 90%; height: auto; margin-bottom: 20px; padding-left: 30px;}
+.z_unwrapping_img { width: 34px; height: 34px; background: url(../../images/pc/z-jiebang.png) no-repeat center center;}
+.z_unwrapping_word { margin: 4px 0 0 15px; font-size: 20px; color: #333;}
+.z_unwrapping_reason { width: 90%; height: auto; padding-left: 64px;}
+.z_reason_radio { width: 15px; height: 15px; margin-top: 4px; vertical-align: middle;}
+.z_label { float: left; width: 93%; margin: 0 0 10px 10px; font-size: 18px; color: #333;}
+.z_btns { margin: 20px 0 0 85px; height: auto; overflow: hidden;}
+.z_save, .z_cancel { width: 80px; padding: 8px 0; font-size: 16px; border: none; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; cursor: pointer;}
+.z_save { margin-right: 10px; color: #fff; background-color: #ff6600;}
+.z_cancel { color: #615868; background-color: #ccc;}
+
+/*每次添加银行卡需要验证支付密码（已经设置过支付密码）*/
+/*.z_pay_box { display: none; height: 241px; border: 7px solid #999; background-color: #fff;}*/
+.z_pay_mark, .z_pay_mark2 { position: fixed; top: 0; right: 0; bottom: 0; left: 0; display: none; width: 100%; height: 100%; background: rgba(0,0,0,.25); z-index: 99;}
+.z_pay_box { position: absolute; top: 50%; left: 50%; width: 450px; height: 240px; border: 7px solid #999; /* -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;*/ transform: translate(-50%,-50%); -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); background-color: #fff; z-index: 100;}
+.z_pay_tit { width: 404px; padding: 15px 0 14px 32px; border-bottom: 1px solid #999; margin-bottom: 15px;}
+.z_pay_tit_left { font-size: 18px; color: #333; text-align: left;}
+.z_pay_tit_close { margin: 5px 30px 0 0; width: 16px; height: 16px; background: url(../../images/pc/d-icons-close.png) no-repeat center center; cursor: pointer;}
+.z_pay_content { width: 100%; height: auto; margin-top: 17px;}
+.z_pay { display: block; width: 80%; margin: 0 auto; height: 45px; line-height: 45px; padding-left: 25px; font-size: 20px; color: #333; border: 1px solid #ccc; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; letter-spacing: 30px;}
+.z_btns_box { width: 100%; height: auto; margin-top: 25px; text-align: center;}
+.z_pay_save, .z_pay_cancel, .z_pay_error_save, .z_pay_error_cancel { width: 120px; padding: 8px 0; font-size: 20px; border: none; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; cursor: pointer;}
+.z_pay_save, .z_pay_error_save { margin-right: 15px; color: #fff; background-color: #ff6600;}
+.z_pay_cancel, .z_pay_error_cancel { color: #666; border: 1px solid #ccc; background-color: #fff;}
+.z_pay_error { width: 100%; font-size: 20px; color: #333; text-align: center;}
+
+/*page*/
+.paging{ float: right; height:94px; margin-right: 13px; line-height:94px; text-align:right;}
+.paging *{ font-size:16px; height:29px; line-height:29px; margin:0 1px; vertical-align: middle;}
+.paging button, .paging a{ display:inline-block; *display:inline; *zoom:1; border: none; outline:none; border:1px solid #e5e5e5; padding:0 12px; background-color:#fff; cursor:pointer; }
+.paging a:hover{text-decoration: underline;}
+.paging a input{ height:29px; line-height:29px; border:none; width:42px; vertical-align:top; text-align:center;}
+.paging .disable{cursor:default;color:#999;}
+.paging .int{padding:0;}
+.paging .current{ color:#FF6600; cursor:default; border:none; background-color:inherit; *background-color:#f0f2f1;}
+
+/*添加银行卡时需要的设置支付密码*/
+.z_payword_box { width: 980px; height: auto;}
+.z_payword_h4 { height: auto; margin: 0 20px 20px; padding: 10px 0 10px 20px; font-size: 16px; color: #615868; text-align: left; border: 1px solid #ccc; background-color: #feffe5;}
+.z_payword_content { width: 60%; height: auto; margin: 40px auto; overflow: hidden;}
+.z_inputbox { width: 100%; overflow: hidden;}
+.z_inputbox:nth-of-type(1) { margin-bottom: 15px;}
+.z_payword_label { width: 100px; margin-right: 10px; font-size: 16px; color: #333; text-align: center;}
+.z_payword { width: 286px; height: 35px; line-height: 35px; padding-left: 10px; font-size: 16px; color: #333; border: 1px solid #ccc; -webkit-border-radius: 1px; -moz-border-radius: 1px; border-radius: 1px; letter-spacing: 10px;}
+.z_hint { margin-left: 15px; font-size: 14px; color: #666;}
+.z_payword_save_btn { display: block; width: 100px; height: auto; margin: 30px 0 30px 100px; padding: 6px 0; font-size: 16px; color: #fff; text-align: center; border: none; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; background-color: #ff6600; cursor: pointer;}
+
+/*我的猪场-我的好友：新增好友、二维码、邀请链接、邀请码等四个模块*/
+.z_friend_options { width: 860px; height: auto; margin-left: 64px; margin-top: 16px;}
+.z_friend_bd { margin-right: -20px;}
+.z_friend_option_way { float: left; width: 200px; height: 80px; margin-right: 20px; overflow: hidden;}
+.option_way_top { width: 100px; height: 100px; margin: 0 auto;}
+.option_way_top img { width: 200px; height: 80px;}
+.option_way_bottom { width: 100%; height: auto; margin-top: 20px; font-size: 16px; color: #666; text-align: center;}
+.z_invitation_code { width: 80px; margin: 0 auto; height: auto; padding-left: 50px; padding-top: 18px; word-break: break-all; font-size: 16px; color: #999; text-align: center; overflow: hidden;}
+.z_cursor { cursor: pointer;}
+.z_friend_mark { position: fixed; top: 0; right: 0; bottom: 0; left: 0; display: none; width: 100%; height: 100%; background: rgba(0,0,0,.25); z-index: 99;}
+.z_friend_shares { position: absolute; top: 50%; left: 50%; width: 450px; height: 180px; border: 1px solid #999; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; transform: translate(-50%,-50%); -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); background-color: #fff; z-index: 100;}
+.z_friend_shares_tit { width: 90%; height: auto; margin: 15px auto; overflow: hidden;}
+.z_friend_shares_l { font-size: 16px; color: #333; text-align: left;}
+.z_friend_shares_r { width: 16px; height: 16px; background: url(../../images/pc/d-icons-close.png) no-repeat center center;}
+.z_friend_shares_box { width: 80%; height: auto; margin: 20px auto; overflow: hidden;}
+.z_invite_link { width: 40%; float: left; height: auto; margin: 0 5%; text-align: center;}
+.share_icon_qzone, .share_icon_sina { width: 85px; height: 85px; margin: 0 auto;}
+.share_icon_qzone { background: url(../../images/pc/share_01.png) no-repeat center center; background-size: 100% 100%;}
+.share_icon_sina { background: url(../../images/pc/share_02.png) no-repeat center center; background-size: 100% 100%;}
+.z_invite_link a p { font-size: 16px; color: #666; text-align: center;}
+.z_friend_btn { position: absolute; top: 17px; right: 50px; width: 50px; height: 46px; border: none; background: url(../../images/pc/z-friend-search.png) no-repeat center center; cursor: pointer; z-index: 98;}
+.z_invitecode { display: block; width: 200px; height: 80px; background: url(../../images/pc/lg_yqm.png) no-repeat center center;}
+.z_delete_friend { position: absolute; top: 8px; right: 8px; width: 16px; height: 16px; background: url(../../images/pc/d-icons-close.png) no-repeat center center;}
+
+/*新增朋友*/
+.myfriends_list .logo_img { -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%;}
+.z_friend_pass { position: absolute; top: 25px; right: 35px; width: 80px; height:40px; line-height:40px; font-size: 16px; color: #fff; text-align: center; border: none; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; background-color: #999999; cursor: pointer;}
+.friend_pass2 { color: #fff; background-color: #ff6600;}
+
+/*抢猪崽-预热中的没有内容时的提示*/
+.z_no_next { float: left; width: 732px; height: 406px; line-height: 406px; text-align: left; font-size: 25px; color: #333; padding-left: 50px;}
+
+/*我的猪肉券-消费记录和分页额外的*/
+.z_font18 { font-size: 18px;}
+.z_mr100 { margin-right: 100px;}
+
+/*账户总览-添加银行卡-设置支付密码弹窗*/
+.z_payword_mark { position: fixed; top: 0; right: 0; bottom: 0; left: 0; display: none; width: 100%; height: 100%; background: rgba(0,0,0,.25); z-index: 99;}
+.z_payword_fir { position: absolute; top: 50%; left: 50%; width: 450px; height: 290px; border: 1px solid #999; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; transform: translate(-50%,-50%); -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); background-color: #fff; z-index: 100;}
+.z_pw_titlebox { width: 90%; height: auto; margin: 0 auto; padding: 4% 5%; border-bottom: 1px solid #dedede; overflow: hidden;}
+.z_pw_contentbox { width: 85%; height: auto; margin: 20px auto; overflow: hidden;}
+.z_pw_tips { margin-top: 6px; margin-left: 5px; color: #ff6600;}
+.z_pw_btns { width: 85%; height: auto; margin: 0 auto; text-align: center;}
+.z_pw_cancel, .z_pw_ensure { width: 100px; height: auto; padding: 8px 0; font-size: 18px; text-align: center; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px;}
+.z_pw_cancel { margin-right: 15px; color: #615868; border: 1px solid #ccc; background-color: #dedede;}
+.z_pw_ensure { color: #fff; border: none; background-color: #3dbd6d;}

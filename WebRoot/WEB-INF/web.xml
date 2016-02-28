@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name></display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
+  
+  <servlet>
+    <servlet-name>AwardServlet</servlet-name>
+    <servlet-class>com.ostarsier.servlet.AwardServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>com.ostarsier.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Winning_list</servlet-name>
+    <servlet-class>com.ostarsier.servlet.Winning_list</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>back</servlet-name>
+    <servlet-class>com.ostarsier.servlet.back</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>exchange</servlet-name>
+    <servlet-class>com.ostarsier.servlet.exchange</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>backList</servlet-name>
+    <servlet-class>com.ostarsier.servlet.backList</servlet-class>
+  </servlet>
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>AwardServlet</servlet-name>
+    <url-pattern>/AwardServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Winning_list</servlet-name>
+    <url-pattern>/Winning_list</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>back</servlet-name>
+    <url-pattern>/back</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>exchange</servlet-name>
+    <url-pattern>/exchange</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>backList</servlet-name>
+    <url-pattern>/backList</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <servlet>
+    <servlet-name>springMVC</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <init-param>
+      <param-name>contextConfigLocation</param-name>
+      <param-value>classpath*:com/bjwg/main/config/springMVC-servlet.xml</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>springMVC</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+  <listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>classpath:com/bjwg/main/config/applicationContext.xml</param-value>
+  </context-param>
+  <filter>
+    <filter-name>setcharacter</filter-name>
+    <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+    <init-param>
+      <param-name>encoding</param-name>
+      <param-value>utf-8</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>setcharacter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <context-param>
+    <param-name>log4jConfigLocation</param-name>
+    <param-value>classpath:com/bjwg/main/config/log4j.xml</param-value>
+  </context-param>
+  <context-param>
+    <param-name>rootLevel</param-name>
+    <param-value>DEBUG</param-value>
+  </context-param>
+  <context-param>
+    <param-name>loggingLevel</param-name>
+    <param-value>INFO</param-value>
+  </context-param>
+  <listener>
+    <listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
+  </listener>
+  <!-- 防XSS漏洞 -->
+  <filter>
+		<filter-name>XssFilter</filter-name>
+		<filter-class>com.bjwg.main.filter.XssFilter</filter-class>
+		<init-param>
+			<param-name>excludeUrls</param-name>
+			<param-value>/product/saveDetail@/information/saveInformation</param-value>
+    	</init-param>
+    	<init-param>
+			<param-name>SplitChar</param-name>
+			<param-value>@</param-value>
+    	</init-param>
+    	<init-param>
+			<param-name>FilterChar</param-name>
+			<param-value>'@"@\@#@:@%@></param-value>
+    	</init-param>
+		<init-param>
+			<param-name>ReplaceChar</param-name>
+			<param-value>‘@“@＼@＃@：@％@＞</param-value>
+    	</init-param>
+	</filter>
+  <!-- 启动本地缓存 -->
+  <listener> 
+ 		<listener-class>com.bjwg.main.listener.WebCacheListener</listener-class> 
+  </listener> 
+</web-app>

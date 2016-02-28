@@ -1,0 +1,89 @@
+@charset "utf-8";
+html{min-height:100%;background:#FFF;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{min-width:240px;max-width:640px;min-height:100%;line-height:1.4;margin:0 auto;font:14px/1.4"Helvetica Neue", Helvetica, STHeiTi, sans-serif, tahoma, arial, \5b8b\4f53;color:#444}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;margin:0;padding:0}audio,canvas,video{display:inline-block;*display:inline;*zoom:1}input:focus,a:focus{outline:none}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var,i{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}:root sub,:root sup{vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}button,input,textarea,select{font-family:tahoma, arial, simsun, sans-serif;font-size:inherit;font-weight:inherit;line-height:1.5;vertical-align:middle}button,input,textarea,select{*font-size:100%}textarea{resize:none}table{border-collapse:collapse;border-spacing:0}th{text-align:inherit}a{vertical-align:baseline;color:#444;}a:hover{text-decoration:none}ins,a{text-decoration:none}del{text-decoration:line-through}.clear{display:block;float:none;clear:both;overflow:hidden;visibility:hidden;width:0;height:0;background:none;border:0;font-size:0}.cfix:before,.cfix:after{content:"";display:table}.cfix:after{clear:both}.cfix{*zoom:1}.fl{float:left;display:inline}.fr{float:right;display:inline}.dib-wrap{font-size:0;letter-spacing:-.31em;*letter-spacing:normal}.dib-wrap .dib{font-size:12px;letter-spacing:normal;word-spacing:normal;vertical-align:top}.dib{display:inline-block;*display:inline;*zoom:1}.hide{display:none}
+
+a img {vertical-align: middle;}
+
+/* 浮动 */
+.list-fl:before, .list-fl:after {content:""; display:table;}
+.list-fl:after {clear:both;}
+.list-fl {*zoom:1;}
+.list-fl>li, .list-fl .list-item {float:left; *display:inline; *zoom:1;}
+
+/* 流体布局 */
+.mod-box {display:-moz-box; display:-webkit-box; display:box;}
+.box-flex {-moz-box-flex:1; -webkit-box-flex:1; -ms-flex:1; box-flex:1;}
+
+/* 表格布局 */
+.table-type {display:table; width:100%;}
+.tbl-cell {display:table-cell;}
+.tbl-cell-ct {display:table-cell; vertical-align:top; text-align:center;}
+.tbl-cell-top {display:table-cell; vertical-align:top;}
+.tbl-cell-mid {display:table-cell; vertical-align:middle;}
+.tbl-cell-btm {display:table-cell; vertical-align:bottom;}
+
+/* 外边距 */
+.mt5 {margin-top:5px;}
+.mt10 {margin-top:10px;}
+.mt15 {margin-top:15px;}
+.mt20 { margin-top: 20px;}
+.mt25 { margin-top:25px;}
+.mt30 { margin-top: 30px;}
+.mt40 { margin-top: 40px;}
+.mt50 { margin-top: 50px;}
+
+.mb5 {margin-bottom:5px;}
+.mb10 {margin-bottom:10px;}
+.mb15 {margin-bottom:15px;}
+.mb20 { margin-bottom: 20px;}
+.mb50 { margin-bottom: 50px;}
+.mb80 { margin-bottom: 80px;}
+
+/* 内边距 */
+.pt5 {padding-top:5px;}
+.pt10 {padding-top:10px;}
+.pt15 {padding-top:15px;}
+.pt20 {padding-top:20px;}
+.pt25 {padding-top:25px;}
+.pt30 {padding-top:30px;}
+
+
+/* 文字对齐 */
+.tl {text-align:left;}
+.tr {text-align:right;}
+.tc {text-align:center;}
+
+/* 响应式图片 */
+.img-responsive {display: block;height:auto;max-width:100%;}		
+
+/* 区块居中 */
+.center-block {display:block;margin-left:auto;margin-right:auto;}
+
+/* 显示隐藏 */
+.show {display: block !important;}
+.hidden {display: none !important;}
+
+.full-img {width:100%; height:auto !important;}
+
+.nowrap {overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+
+.go-back {display:inline-block; width: 15px; height:15px; margin-top:5px; border-color:#FFF; border-style:solid; border-width:3px 0 0 3px; transform:rotate(-45deg);-webkit-transform:rotate(-45deg);}
+
+
+div,p,h1,h2,h3,h4,h5,h6,form,dl,dt,dd,ul,ol,li,a,i,em,strong,span,th,td,input,textarea{-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;}
+html,body{ width:100%; height:100%;}
+
+input[type="submit"], input[type="button"], buttun { -webkit-appearance: none;} /*在ios下，submit\button去除默认样式*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+

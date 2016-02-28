@@ -1,0 +1,164 @@
+/**
+ * Mark CSS framework
+ * CSS Reset based on YUI 3.4.1 (build 4118) and Alice
+ * By qiheng
+ * 2015-07-27
+*/
+
+
+*{margin:0px;padding:0px;}
+
+.active_div{
+	width:1200px;
+	height:1500px;
+background:url(../../images/pc/active_back.png);
+   margin-left:16%;
+	background-repeat: no-repeat;
+
+}
+.active_div h1{
+	text-align: center;	
+}
+
+
+/* button °´Å¥*/
+#button1{
+border-color:#199301;
+	margin-left:25px;
+	width: 182px;
+	height: 62px;
+}
+#button2{
+	border-color:#199301;
+	margin-left:25px;
+	width: 182px;
+	height: 62px;
+}
+
+
+
+.periods{
+	
+	font-size: 22px;
+	margin-left: -140px;	
+		color:white;
+}
+
+
+
+
+/*div:shop1*/
+.shop1{
+	color:white;
+	display:block;
+	width:550px;
+	float:left;
+	height:auto;
+	margin-left:65px;
+	margin-top: 100px;
+}
+.floatImg{
+	float: left
+}
+.floatText{
+	font-size:18px;
+	color:white;
+	margin-top:90px;
+	line-height:35px;
+	margin-left:30px;
+	float:left;
+	list-style-type: none;
+		
+}
+
+.count{
+margin-top: -13px;
+	
+}
+
+
+
+
+.shop2{
+	display:block;
+	width:550px;
+	height:auto;
+	float:left;
+	margin-left:35px;
+		margin-top: 100px;
+}
+
+#clear{
+	clear: both;
+	
+}
+.active_text{
+	margin-top:50px;
+width:1200px;
+height:auto;
+	color: white;
+	
+}
+
+.explain{	
+
+	margin:auto;
+	text-align:left;
+	font-size:16px;
+	 padding-left:32px;
+	  text-indent:-32px;
+	width:400px;
+	height:120px;
+
+	border-color: white;
+}
+.winningList{
+	font-size:18px;
+	text-align:left;
+	margin:auto;
+	width:500px;
+	height:180px;
+	
+	border-color: white;
+	color: white;
+		margin-top:30px;
+}
+
+.list{
+
+	text-align:left;
+	margin-top:30px;
+	width:500px;
+	height:120px;
+
+	border-color: white;
+	color: white;
+	background-color: green;
+}
+
+.intro{
+	margin:auto;
+	text-align:left;
+	margin-top:30px;
+	width:500px;
+	height:190px;
+
+	border-color: white;
+	color: white;	
+}
+
+
+.winning{
+	line-height: 30px;
+	
+}
+
+.winning tr:nth-child(even){
+	color: red;
+	text-align: right;
+}
+
+.winning tr:nth-child(even) td{
+	padding-left: 50px;
+	
+}

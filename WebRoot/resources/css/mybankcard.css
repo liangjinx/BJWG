@@ -1,0 +1,126 @@
+/*
+* 我的银行卡
+*/
+html {font-size:10px;}
+body {font-size:1.4rem; color:#615868;}
+.c-gray {color:#979698}
+.c-highlight {color:#f60;}
+.bg-gray {background-color:#ebebeb;}
+
+/* 图标类 */
+/*.ico {position:relative; display:inline-block; height:40px; width:40px; vertical-align:middle;}*/
+.ico {position:relative; display:inline-block; height:20px; width:20px; vertical-align:middle;margin-top: -4px;}
+
+/*.i-plus:before, .i-plus:after {content:''; height:5px; width:40px; display:block; background:#979698; border-radius:10px; -webkit-border-radius:10px; -moz-border-radius:10px; position:absolute; top:17px; left:0px;}*/
+.i-plus:before, .i-plus:after {content:''; height:2px; width:20px; display:block; background:#979698; border-radius:10px; -webkit-border-radius:10px; -moz-border-radius:10px; position:absolute; top:9px; left:0px;}
+/*.i-plus:after{height:40px; width:5px; top:0; left:17px;}*/
+.i-plus:after{height:20px; width:2px; top:0; left:9px;}
+/*.i-arr {overflow:hidden; width:25px;}*/
+.i-arr {/*overflow:hidden;*/ width:25px;height: 25px;}
+/*.i-arr:before {content:''; height:20px; width:20px; display:block; border:3px solid #979698; border-left-width:0; border-top-width:0; transform:rotate(-45deg); -webkit-transform: rotate(-45deg); -moz-transform:rotate(-45deg); -o-transform:rotate(-45deg); -ms-transform:rotate(-45deg); position:absolute; top:8px; right:7px;}*/
+.i-arr:before {content:''; height:15px; width:15px; display:block; border:3px solid #979698; border-left-width:0; border-top-width:0; transform:rotate(-45deg); -webkit-transform: rotate(-45deg); -moz-transform:rotate(-45deg); -o-transform:rotate(-45deg); -ms-transform:rotate(-45deg); position:absolute; top:15px; right:7px;}
+
+.i-card-flag {display:inline-block; width:25px; height:25px; background:url(../images/card-flag.png) no-repeat; background-size:100%;}
+
+/* 按钮 */
+.btn {display:inline-block; padding:8px 12px; font-size:1.8rem; vertical-align:middle; text-align:center; border-radius:4px; border:1px solid transparent; cursor:pointer;}
+.full-btn {display:block;}
+
+/* 默认按钮 */
+.btn-default {background-color:#3cbd6d; border-color:#3cbd6d; color:#fff;}
+
+/* 银行卡列表 */
+.bank-card-list {padding-top:10px; font:inherit;}
+.bank-card-list li {margin-bottom:10px; padding:10px 15px; background-color:#fff; border-top:1px solid #dedede; border-bottom:1px solid #dedede;}
+.bank-card-list .card-list-area {padding:0;}
+
+.card-item {position:relative; padding:10px 15px;}
+.card-item .bank-logo {width:5rem; height:5rem; vertical-align:middle;}
+.card-item h6 {font-size:1.6rem;}
+.card-item p {margin-top:3px; font-size:1.2rem;}
+.card-item .tbl-cell-mid:first-child {width:6rem;}
+
+.bank-card-list .card-item {border-top:1px solid #dedede;}
+.bank-card-list a:first-child .card-item {border-top:0;}
+.bank-card-list .i-card-flag {position:absolute; right:15px; top:50%; -webkit-transform:translate3d(0,-50%,0); transform:translate3d(0,-50%,0);}
+
+/* 添加银行卡 */
+.myBankCard .add-card-handle {font-size:1.6rem; line-height:3.5rem;}
+.add-card-handle > a {display:block;}
+
+.myBankCard .i-plus {margin-right:10px;}
+/*.myBankCard .i-arr {margin-top:2px;}*/
+
+.myBankCard .btn-container {margin-bottom: 25px; padding:0 15px;}
+
+/* 添加银行卡与银行卡详情 */
+.block-panel {position:relative; padding-top:10px; padding-bottom:10px;}
+
+.list-panel {font-size:1.6rem;}
+.list-panel .list-panel-item, .list-panel > li {margin-bottom:10px; padding-left:15px; padding-right:15px; background-color:#fff; border-top:1px solid #dedede; border-bottom:1px solid #dedede;}
+.list-panel .block-panel{border-top:1px solid #dedede;}
+.list-panel .list-panel-item .block-panel:first-child, .list-panel > li .block-panel:first-child {border-top:none;}
+
+.add-bank-card-fm .fm-label {display:inline-block; width:25%; font-size:1.6rem;}
+.add-bank-card-fm .fm-input {border:1px solid transparent; height:22px; width:65%;}
+.add-bank-card-fm .fm-select {width:65%; border:0; background:transparent; appearance:none; -moz-appearance:none; /* Firefox */ -webkit-appearance:none; /* Safari 和 Chrome */}
+.block-panel .card-type {position:absolute; right:0; top:50%; color:#979698; -webkit-transform:translate3d(0,-50%,0); transform:translate3d(0,-50%,0);}
+
+/* 提现 */
+.user-bank-card-info {font-size:1.6rem;}
+.user-bank-card-info .info-area {padding-top:30px; padding-bottom:30px; background-color:#fff;}
+
+.bank-card-info .card-num {margin-top:5px; margin-bottom:5px;}
+.bank-card-info .bank-info {font-size:1.4rem; color:#979698;}
+.bank-card-info .bank-info img {margin-right:5px; vertical-align:middle;}
+
+.inp-money {margin-left:5px; border:0; width:65%; height:30px; padding:4px 5px 8px;}
+
+.bank-info-tips {margin:10px 15px 0; font-size:1.4rem;}
+.bank-info-tips .limit-explain {float:right;}
+
+.with-draw-success:before {content:''; display:block; width:60px; height:60px; margin:0 auto 30px; background:url(../images/tx-success.png) no-repeat; background-size:100%;}
+
+/* 钱包明细 */
+.profit-detail {font-size:1.4rem;}
+.profit-detail > li {padding:10px; background-color:#fff; border-bottom:1px solid #dedede;}
+.profit-detail .handle-type {font-size:1.6rem;}
+.profit-detail .time, .profit-detail .profit {float:right;}
+.profit-detail .time {color:#979698;}
+.profit-detail .profit-up {color:#fe3716}
+.profit-detail .profit-down {color:#3cbd6d}
+
+/* 遮罩层 */
+.hidden-y {height:100%; overflow-y:hidden;}
+.overlay {position:fixed; top:0; left:0; width:100%; height:100%; z-index:1000; background-color:rgba(0,0,0,0.5);}
+
+/* 我的银行卡公用层类 */
+.mod-layer {position:fixed; top:50%; left:50%; width:95%; font-size:1.6rem;  background-color:#fff; border-radius:5px; -webkit-transform:translate3d(-50%,-50%,0); transform:translate3d(-50%,-50%,0);}
+.mod-layer > .hd {padding:12px 10px; border-bottom:1px solid #dedede;}
+.mod-layer > .bd {padding:20px 10px;}
+.mod-layer .close {position:absolute; right:10px; top:12px; width:22px; height:22px; background:url(../images/layer-close.png) no-repeat;}
+
+/* 支付密码层 */
+.pay-pwd-layer .pay-money-con h4 {font-size:1.4rem;}
+.pay-pwd-layer .pay-money-con .money {margin-top:5px; margin-bottom:15px; font-size:1.8rem;}
+.pay-pwd-layer .pay-money-con .pwd-in {margin-bottom:20px; padding:5px 0; border:1px solid #dedede; border-radius:3px;}
+.pay-pwd-layer .pay-money-con input {width:100%; padding:5px; border:0; border-left:1px solid #dedede; text-align:center;}
+.pay-pwd-layer .pay-money-con li:first-child input {border-left:0;}
+
+/* 支付密码错误层 */
+.pay-pwd-error-layer dl {padding:20px;}
+.pay-pwd-error-layer dd {margin-top:60px; text-align:right;}
+.pay-pwd-error-layer dd a {margin-left:30px; color:#f60;}
+
+/*===== pangzi =======*/
+/*z\change*/
+/*bank_card*/
+.z_no_bank_caed { width: 100%; height: 45px; line-height: 45px; margin: 25px auto; font-size: 1.6rem; color: #615868; text-align: center;}
+
+/*wallet_change*/
+.z_no_wallet_change { width: 90%; height: auto; padding: 25px 0; font-size: 1.6rem; color: #615868; text-align: center;}
+
+/*add-bank-card*/
+.z_card_tixing { width: 100%; height: auto; padding: 15px 15px 7px; font-size: 12px; color: #615868; text-align: left; background-color: #fff;}
+.z_card_tixing a { display: block; padding: 8px; width: 100%;}
+.z_card_tixing a, .z_span_1, .z_span_2 { color: #ff6600;}

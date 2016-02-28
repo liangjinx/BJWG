@@ -1,0 +1,398 @@
+
+body .d-wrap,.d-wrap input{
+	font-family: "Microsoft Yahei","微软雅黑";
+	font-size:14px;
+	color:#333;
+	background-color:#fff;
+}
+.d-wrap h1,
+.d-wrap h2,
+.d-wrap h3,
+.d-wrap h4,
+.d-wrap h5,
+.d-wrap h6{line-height:1em;}
+.d-wrap i{font-style:normal;}
+.d-wrap a{
+	font-family: "Microsoft Yahei","微软雅黑";
+	font-size:14px;
+	color:#333;
+}
+.d-wrap a:hover{text-decoration:none;}
+.of-hide{overflow:hidden;}
+.fl-left{float:left;}
+.fl-right{float:right;}
+.d-icon{
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+	vertical-align:middle;
+}
+.d-hide{display:none !important;}
+
+/*----------登录 start-----------*/
+.login-wrap{
+	width:100%;
+	min-width: 1200px; 
+	height:473px;
+	background:url(../../images/pc/login-bd-1.jpg) no-repeat center center;
+}
+.login-cont{
+	position:relative;
+	width:1200px;
+	min-width: 1200px; 
+	margin:0 auto;
+	padding-top:20px;
+	overflow:hidden;
+}
+.login-main{
+	position:relative;
+	width:360px;
+	height:435px;
+	float:right;
+	margin-right:104px;
+}
+.login-main .main-bd{
+	width:100%;
+	height:100%;
+	background-color:#fff;
+	opacity:0.4;
+	filter: alpha(opacity=40);
+}
+.login-main .main-box{
+	position:absolute;
+	left:7px;
+	top:8px;
+	width:346px;
+	height:420px;
+	background:#fff;
+}
+.login-main .main-box .row{
+	padding-left:21px;
+}
+.login-main .main-box .row-1{
+	height:58px;
+	line-height:58px;
+	font-size:20px;
+	padding-right:15px;
+}
+.login-main .row-1 .s2{
+	color:#FF6600;
+	font-size:16px;
+}
+.login-main .row-1 img{
+	vertical-align: middle;
+	position:relative;
+	top:-2px;
+}
+.login-main .row-2{
+	height:26px;
+	margin:6px 0 13px;
+}
+.login-main .inpt{
+	width:302px;
+	height:37px;
+	line-height:37px;
+	border:1px solid #ccc;
+	border-radius:2px;
+	margin-bottom:15px;
+	overflow:hidden;
+}
+.login-main .inpt .lab{
+	display:block;
+	width:60px;
+	height:37px;
+	float:left;
+	border-right:1px solid #ccc;
+}
+.login-main .inpt .lg_span{ 
+	position:absolute; 
+	line-height:32px; 
+	margin-top:5px; 
+	margin-left:5px; 
+	color:red; 
+	font-size:18px;
+}
+.login-main .inpt input{
+	display:block;
+	float:left;
+	width:240px;
+	height:37px;
+	line-height:37px;
+	border:none;
+	text-indent:6px;
+	vertical-align: top;
+}
+.login-main .row-3 .lab{
+	background:#f3f3f3 url(../../images/pc/d-icons-user.png) no-repeat center center;
+}
+.login-main .row-4 .lab{
+	background:#f3f3f3 url(../../images/pc/d-icons-pass.png) no-repeat center center;
+}
+.login-main .row-4-1 .lab{
+	background:#f3f3f3 url(../../images/pc/d-icons-invitation-code.png) no-repeat center center;
+}
+.login-main .row-5{
+	font-size:14px;
+	color:#666;
+	padding-right:15px
+}
+.login-main .row-5 input[type="checkbox"]{
+	position:relative;
+	top:-1px;
+}
+.login-main .row-5 a{
+	color:#666;
+}
+.login-main .row-5 a:hover{
+	color:#FF6600
+}
+.login-main .row-6{
+	margin-top:25px;
+}
+.d-wrap .btn-submit{
+	width:305px;
+	height:50px;
+	line-height:50px;
+	font-size:20px;
+	text-align:center;
+	color:#fff;
+	letter-spacing:15px;
+	border:none;
+	background-color:#FF6600;
+	border-radius:2px;
+	cursor:pointer;
+}
+.d-wrap .btn-submit:active{
+	background-color:#DF5A01;
+}
+.login-main .row-7{
+	margin-top:10px;
+	color:#ff6600;
+}
+/*----------登录 end-----------*/
+
+/*----------注册 start-----------*/
+.reg-wrap{
+	height:477px;
+	background:url(../../images/pc/login-bd-2.jpg) no-repeat center center;
+}
+.reg-wrap .reg-code{
+	position:absolute;
+	left:540px;
+	top:33px;
+	width:130px;
+	height:130px;
+	overflow:hidden;
+}
+.reg-wrap .reg-code img{width:100%;height:100%;}
+.reg-wrap .row-2{
+	height:auto;
+	margin-top:7px;
+}
+.reg-wrap .row-2 .lab{
+	background:#f3f3f3 url(../../images/pc/d-icons-user.png) no-repeat center center;
+}
+.reg-wrap .row-3 .inpt{position:relative;}
+.reg-wrap .row-3 input[type="text"]{width:115px;}
+.reg-wrap .row-3 .btn-code{
+	display:block;
+	position:absolute;
+	top:0;
+	right:0;
+	width:123px;
+	height:31px;
+	line-height:31px;
+	margin-top:3px;
+	color:#ff6600;
+	text-align:center;
+	border-left:1px solid #ff6600;
+	font-size:16px;
+	background-color:#fff;
+	cursor:pointer;
+	z-index:2;
+}
+.reg-wrap .row-3 .lab{
+	background:#f3f3f3 url(../../images/pc/d-icons-authcode.png) no-repeat center center;
+}
+.reg-wrap .row-5{
+	height:16px;
+	line-height:16px;
+	color:#ff6600;
+}
+.reg-wrap .row-6{margin-top:10px;}
+.reg-wrap .row-7{
+	margin-top:11px;
+}
+.reg-wrap .row-7 input{
+	vertical-align:middle;
+	position:relative;
+	top:-1px;
+}
+.reg-wrap .row-7 a:hover{
+	color:#FF6600;
+	text-decoration:underline;
+}
+/*----------注册 end-----------*/
+
+/*----------忘记密码 start-----------*/
+.forg-wrap{
+	height:474px;
+	background:url(../../images/pc/login-bd-3.png) no-repeat center center;
+}
+.forg-cont{
+	width:1210px;
+	margin:0 auto;
+}
+.forg-title{
+	font-size:20px;
+	padding:50px 0 16px;
+	text-indent:360px;
+}
+.forg-main{
+	width:968px;
+	font-size:16px;
+	color:#666;
+	margin-left:222px;
+}
+.forg-main .main-form{
+	width:500px;
+	padding-top:8px;
+	border-right:1px solid #ccc;
+}
+.forg-main .inpt{
+	height:39px;
+	line-height:39px;
+	overflow:hidden;
+}
+.forg-main .row{
+	position:relative;
+	margin-bottom:15px;
+}
+.forg-main .error-tips{
+	height:16px;
+	line-height:16px;
+	margin-left:138px;
+	color:#FF6600;
+}
+.forg-main .inpt .lab{
+	display:block;
+	width:128px;
+	height:39px;
+	line-height:39px;
+	text-align:right;
+	padding-right:10px;
+	float:left;
+}
+.forg-main .inpt input{
+	display:block;
+	float:left;
+	width:303px;
+	height:37px;
+	line-height:37px;
+	text-indent:11px;
+	vertical-align: top;
+	border:none;
+	border:1px solid #ccc;
+	border-radius:2px;
+}
+.forg-main .row-code input[type="button"]{
+	position:absolute;
+	right:59px;
+	top:4px;
+	width:101px;
+	height:30px;
+	line-height:30px;
+	cursor:pointer;
+	border:none;
+	font-size:16px;
+	color:#FF6600;
+	border-left:1px solid #FF6600;
+}
+::-webkit-input-placeholder{
+	font-size:16px;
+	color:#ccc;
+}
+.forg-main input:-moz-placeholder,
+.forg-main input:-ms-input-placeholder{
+	font-size:16px;
+	color:#ccc;
+}
+.d-wrap .btn-code:active{background:#e7e7e7;}
+.forg-main .forg-submit{
+	margin-left:138px;
+}
+.forg-main .main-login{
+	margin:80px 0 0 205px;
+}
+.forg-main .main-login .link-login{
+	width:118px;
+	letter-spacing:normal;
+	margin-top:9px;
+}
+/*----------忘记密码 end-----------*/
+
+/*---协议 start---*/
+.agreement{
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	z-index:999;
+	display:none;
+}
+.agreement .agr-bd{
+	position:relative;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	background-color:#bfc0c0;
+	opacity:0.2;
+}
+.agreement .agr-main{
+	position:absolute;
+	width:988px;
+	height:527px;
+	top:172px;
+	left:50%;
+	margin-top: -106px;
+	margin-left:-494px;
+	border:3px solid #cccccc;
+	border-radius:4px;
+	background-color:#fff;
+	font-size:14px;
+	color:#333;
+}
+.agreement .agr-main .title{
+	height:30px;
+	line-height:30px;
+	border-bottom:1px solid #ccc;
+	text-indent:10px;
+}
+.agreement .agr-main .cont{
+	height:390px;
+	line-height:1.3;
+	padding:10px;
+	overflow-y:scroll;
+}
+.agreement .agr-main p{
+	margin-bottom:15px;
+}
+.agreement .agr-main .btn-sure{
+	text-align:center;
+	padding:28px 0;
+}
+.agreement .agr-main .btn-submit{
+	width:344px;
+	height:36px;
+	line-height:36px;
+	font-family: "Microsoft Yahei","微软雅黑";
+	letter-spacing:normal;
+	font-size:16px;
+	outline:none;
+}
+/*---协议 end---*/
+
+
+

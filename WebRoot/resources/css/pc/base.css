@@ -1,0 +1,377 @@
+/**
+ * Mark CSS framework
+ * CSS Reset based on YUI 3.4.1 (build 4118) and Alice
+ * By qiheng
+ * 2015-07-27
+*/
+
+/* 闃叉鐢ㄦ埛鑷畾涔夎儗鏅鑹插缃戦〉鐨勫奖鍝嶏紝鍚屾椂璁╃敤鎴峰彲浠ヨ嚜瀹氫箟瀛椾綋鐨勫ぇ灏�*/
+*{margin:0px;padding:0px;}
+
+/* 閲嶇疆鎵�湁娴忚鍣ㄧ殑鍐呭杈硅窛 */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+	margin:0;
+	padding:0;
+}
+
+/* 瀹氫箟瀛椾綋銆佽楂橈紝\5b8b\4f53 灏辨槸瀹嬩綋鐨勬剰鎬濓紝闃叉鏈夌殑娴忚鍣ㄤ笉鍏煎 simsun 鐨勭敤娉�*/
+body{font-family: "Microsoft YaHei" ! important;
+}
+
+/* 閲嶈 html5 鐨勬爣绛�*/
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+	margin:0;
+	padding:0;
+}
+
+/* html5 鐨勫獟浣撴爣绛捐窡 img 鏍囩淇濇寔涓�嚧 */
+audio, canvas, video {
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+}
+
+/* 鍘绘帀鎸夐挳鍜岄摼鎺ュ鍥寸殑铏氱嚎 */
+input:focus, a:focus {
+	outline:none;
+}
+
+/* 鍘绘帀杩欎袱涓厓绱犵殑榛樿杈规 */
+fieldset, img {
+	border:0;
+}
+
+/* 閲嶇疆瀹冧滑榛樿鐨勫瓧浣撴牱寮�*/
+address, caption, cite, code, dfn, em, /* strong, */ th, var {
+	font-style:normal;
+	font-weight:normal;
+}
+
+/* 鍘绘帀椤圭洰绗﹀彿锛岀敱浜�li 鍙互缁ф壙锛屾墍浠ュ畾涔夊埌 ol 鍜�ul 涓婂氨琛屼簡 */
+ol, ul {
+	list-style:none;
+}
+
+/* 榛樿鏍峰紡涓哄眳涓紝浣嗘槸涔犳儻涓婁竴鑸笉鐢ㄥ眳涓�*/
+caption, th {
+	text-align:left;
+}
+
+/* 閲嶇疆鏍囬鐨勯粯璁ゆ牱寮忥紝璁╁悗鏈熻嚜瀹氶仴锛屾潵鑷�YUI */
+h1, h2, h3, h4, h5, h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+
+q:before, q:after {
+	content:'';
+}
+
+/* firefox 涓嬭繖涓や釜鍏冪礌鏈夎竟妗嗭紝鍘绘帀骞堕噸缃瓧浣撴牱寮�*/
+abbr, acronym {
+	border:0;
+	font-variant:normal;
+}
+
+/* 缁熶竴鐨勪笂鏍囧拰涓嬫爣锛屾潵鑷�Alice */
+sub, sup {
+    font-size:75%;
+	line-height:0;
+	position:relative;
+	vertical-align: baseline;
+}
+:root sub, :root sup{
+	vertical-align: baseline; /* for ie9 and other mordern browsers */
+}
+sup {
+	top:-0.5em;
+}
+sub {
+	bottom:-0.25em;
+}
+
+/* 琛ㄥ崟鍏冪礌涓嶇户鎵�font 鏍峰紡锛屾晠鑰岄噸璁�*/
+button, input, textarea, select {
+	font-family:tahoma, arial, simsun, sans-serif;
+	font-size:inherit;
+	font-weight:inherit;
+	line-height:1.5;
+	vertical-align:middle;
+}
+button, input, textarea, select {
+	*font-size:100%;
+}
+
+/* 绂佹鏂扮増鏈殑鐏嫄鍜岃胺姝屼笅鏂囨湰鍩熷彲鐢辩敤鎴疯嚜鐢辨嫋鍔ㄧ殑闂 */
+textarea {
+	resize:none;
+}
+
+/* 榛樿閲嶅悎鍗曞厓鏍�*/
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+
+/* IE 涓嬬殑 th 涓嶇户鎵�text-align */
+th {
+	text-align:inherit;
+}
+
+/* 璁╅摼鎺ヤ互鍩虹嚎瀵归綈锛屾潵鑷�YUI */
+a {
+	vertical-align:baseline;
+	
+}
+.footer_nav a {
+	vertical-align:baseline;
+	font-family: "Microsoft Yahei","寰蒋闆呴粦";
+	font-size:16px;
+	color:#333;
+}
+
+
+/* 璁╅摼鎺ュ湪 hover 鐘舵�涓嬪叿鏈変笅鍒掔嚎 */
+a:hover {
+	text-decoration:none;
+}
+
+/* 杩欎袱涓厓绱犵殑涓嬪垝绾匡紝榛樿鍘绘帀 */
+ins, a {
+	text-decoration:none;
+}
+
+/*functions*/
+/* 涓嶆槗寮曡捣闂鐨勬竻闄ゆ诞鍔紝浣嗘槸涓庣┖鏍囩閰嶅悎浣跨敤 */
+.clear {
+	display:block;
+	float:none;
+	clear:both;
+	overflow:hidden;
+	visibility:hidden;
+	width:0;
+	height:0;
+	background:none;
+	border:0;
+	font-size:0;
+}
+
+/* 涓嶉渶瑕佺敤绌烘爣绛剧殑 clearfix锛岀敤浜庡唴閮ㄥ寘鍚诞鍔�*/
+.clearfix:before, .clearfix:after {
+	content:"";
+	display:table;
+}
+.clearfix:after {
+	clear:both;
+}
+.clearfix {
+	*zoom:1;
+}
+
+/* 鍚戝乏鍙虫诞鍔ㄧ殑鏃跺�锛屽悓鏃惰В鍐�IE6 涓嬬殑鍙岃竟璺濋棶棰�*/
+.left {
+	float:left;
+	*display:inline;
+}
+.right {
+	float:right;
+	*display:inline;
+}
+
+/* 璺ㄦ祻瑙堝櫒鍏煎鐨�inline-block锛岀敤浜庡鍥寸殑鍖呭惈鍏冪礌 */
+.dib-wrap{
+	font-size:0;
+	*word-spacing:-1px;
+}
+
+/* 闇� display:inline-block 鐨勫厓绱狅紝浣嗘槸澶栧洿蹇呴』鏈�.dib-wrap */
+.dib-wrap .dib{
+	font-size:12px;
+	letter-spacing:normal;
+	word-spacing: normal;
+	vertical-align:top;
+}
+
+/* 涓�webkit 鍗曠嫭浼樺寲瀛楄窛 */
+@media screen and (-webkit-min-device-pixel-ratio:0){
+.dib-wrap{
+	letter-spacing:-5px;
+}
+}
+
+/* 淇 IE6/7 鐨勯棶棰�*/
+.dib{
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+}
+
+
+/*澶撮儴鏍峰紡*/
+.banner_box{ width:100%; height:36px; line-height:36px; background:#31323b; min-width:1200px; position:relative;}
+.center{ width:1200px; height:auto;position:relative; margin:0 auto;}
+.f_left{ float:left;}
+.f_right{ float:right;}
+.banner_left,.banner_right{ height:36px; overflow:hidden;}
+.banner_a{ width:36px; height:36px; cursor:pointer; margin-right:6px;}
+.banner_a img,.banner_phone img{width:36px; height:36px; display:block; border:0px; outline:0px;}
+.banner_phone{ height:36px; line-height:36px; color:#FFF; font-size:16px; cursor:pointer; float:left; margin-left:30px;}
+.banner_phone span{height:36px; line-height:36px; float:left;}
+.banner_right .banner_a{ width:4em; text-align:center; display:block;}
+.banner_right a span{height:36px; line-height:36px; float:right;color:#FFF; font-size:14px; width:4em; text-align:center; display:block;}
+
+.nav_box{width:100%; height:auto; background:#ffffff; min-width:1200px; position:relative; z-index:10;}
+.logo_box{ height:100px; width:120px; float:left; display:block; margin:5px 0px; margin-left:-70px;}
+.logo_box img{height:100px; width:120px; border:0px; display:block;}
+.logo_boots{color:back;width:220px; display:block;font-weight: bold; font-family: "华文新魏"; font-size: 18px;}
+.nav_ul{  height:54px; width:840px;position:relative; float:right; margin-right:145px; margin-top:-45px;}
+.nav_ul li{ height:54px; width:100px; line-height:54px; text-align:center; float:left; position:relative;}
+.nav_ul li a{ height:50px; line-height:50px; width:100px; border-bottom:4px solid #fff; text-align:center; display:block; cursor:pointer; font-size:16px; color:#615968;}
+.nav_ul li a.hover_nav_a{border-bottom:4px solid #97bf0d;}
+.nav_ul li a:hover{ text-decoration:none;}
+.nav_ul li .sub_nav{width:100px; position:absolute; float:left; left:0px; top:54px; display:none; border-top:0px; z-index:10; background-color:#FFF;}
+.nav_ul li .sub_nav a{ height:38px; line-height:38px; }
+.nav_ul .about_ym:hover .about_ym_a{border-bottom:4px solid #97bf0d;}
+.nav_ul li:hover .sub_nav{ display:block;}
+
+
+
+.banner_code_box{ width:250px; height:auto; position:absolute; right:-80px; bottom:-138px; z-index:999; display:none;}
+.wechat_code_box{ right:0px; left:30px;}
+.banner_code_box .code_tit{ width:27px; height:27px; margin-left:74px;}
+.code_box{ width:250px; height:110px; background:#eee;box-shadow: 1px 1px 2px #999; }
+.code_box img{ width:90px; height:90px; margin:10px; float:left; display:block; outline:0px;}
+.code_main{ width:120px; float:right; margin-top:15px; margin-right:15px; text-align:left;}
+.code_main_p{ line-height:1.3; font-size:20px; color:#333;}
+.code_main_span{line-height:1.4; font-size:12px; color:#333; margin-top:10px;}
+
+
+/*搴曢儴椤佃剼鏍峰紡*/
+.footer_box{ width:100%; height:auto; min-width:1200px;position:relative; background:#ebebeb; padding-top:30px; padding-bottom:20px;}
+.footer_left{ width:700px; float:left; height:auto;}
+.footer_gz,.footer_nav{ width:900px; height:auto; position:relative;margin-left:60px;}
+.footer_gz span{ float:left; line-height:46px; height:46px;font-size:16px; color:#615968;}
+.footer_gz a{ width:46px; height:46px; float:left; margin-left:20px; cursor:pointer;}
+.footer_gz a img{width:46px; height:46px; display:block; outline:0px; border:0px;}
+.footer_nav{}
+.footer_logo{ width:96px; height:80px;margin-left:-85px; float:left; margin-top:45px; display:block; margin-right:20px;}
+.footer_logo img{width:96px; height:80px; display:block; border:0px; outline:0px;}
+.footer_nav_p{ margin-top:-50px; float:left; margin-left:90px; height:20px; line-height:20px;font-size:20px; color:#615968;}
+.footer_nav_p span{ margin:0px 20px;}
+.footer_nav_p a:hover{ text-decoration:none; cursor:pointer; color:#97bf0d;}
+.copyright{ text-align:center;font-size:14px; color:#615968; float:left; margin-left:150px;margin-top:14px; }
+
+.footer_code{ float:right; width: 120px; height: 120px;  margin-right:310px; border:0px; display:block;margin-top: -210px;}
+.footer_code2{ float:right; width: 120px; height: 50px;  margin-right:410px; border:0px; display:block;margin-top: -80px;}
+.footer_code3{ float:right; width: 120px; height: 120px; line-height:29px; margin-right:180px; border:0px; display:block;margin-top: -210px;}
+
+.self_code{ float:left; height: 70px; border:0px; display:block;margin-top: 20px;}
+
+
+
+.footer_banner{width:100%; height:60px; min-width:1200px;position:relative; background:#fff; padding-top:30px; }
+.footer_banner .copy_p{ float:left; font-size:14px;margin-left:50px; color:#999;}
+.footer_banner .ipc_p{ float:right; font-size:16px;margin-right:140px;color:#615968;}
+
+.footer_gz_img{ background:center no-repeat; }
+.footerimg1{ background:url(../../images/pc/footer_img02_b.png);}
+.footerimg1:hover{ background:url(../../images/pc/footer_img02_a.png);}
+
+.footerimg2{ background:url(../../images/pc/footer_img03_b.png);}
+.footerimg2:hover{ background:url(../../images/pc/footer_img03_a.png);}
+
+.footerimg3{ background:url(../../images/pc/footer_img01_b.png);}
+.footerimg3:hover{ background:url(../../images/pc/footer_img01_a.png);}
+
+/*搴曢儴footer鏍峰紡*/
+.footer{
+	background:#ebebeb;
+}
+.partner{
+	padding-top: 20px;
+    margin-left: 15%;
+}
+.foot-nav{
+    margin-top: 20px;
+    margin-left: 15%;
+}
+.foot-nav .logo{
+    float: left;
+    margin-right: 10px;
+    width: 120px;
+    height: 100px;
+}
+.foot-nav .foot-nav-content{
+    float: left;
+    margin-left: 10px;
+    margin-top: 40px;
+    height: 30px;
+}
+.foot-nav .foot-nav-content a{
+    height: 100%;
+    margin-right: 20px;
+}
+.foot-nav .followus{
+    float: right;
+    margin-top: -20px;
+    margin-right: 100px;
+}
+.foot-nav .followus p{
+    margin-left: 30px;
+}
+.foot-nav .followus .qrcode{
+    widt: 120px;
+    height: 120px;
+}
+.foot-nav .followus .qq{
+    float: right;
+    margin-right: 20px;
+    width: 47px;
+    height: 47px;
+}
+.foot-nav .followus .sina{
+    float: right;
+    margin-right: 10px;
+    width: 47px;
+    height: 47px;
+}
+.links{
+    margin-left: 15%;
+    margin-top: -40px;
+    padding-bottom: 20px;
+}
+.links span{
+    float: left;
+    margin-left: 0%;
+}
+.links a{
+    float: left;
+       margin-left: 5%;
+}
+.icp{
+    margin-top: 20px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.followus .footer_gz_img{ background:center no-repeat; }
+.followus .footerimg1{ background:url(../../images/pc/footer_img02_b.png);}
+.followus .footerimg1:hover{ background:url(../../images/pc/footer_img02_a.png);}
+
+.followus .footerimg2{ background:url(../../images/pc/footer_img03_b.png);}
+.followus .footerimg2:hover{ background:url(../../images/pc/footer_img03_a.png);}
+
+.followus .footerimg3{ background:url(../../images/pc/footer_img01_b.png);}
+.followus .footerimg3:hover{ background:url(../../images/pc/footer_img01_a.png);}
+/*椤靛ご鍙充笂瑙掔櫥褰曞悗鐨勬牱寮�*/
+.z_after_login { display: block;}
+.z_after_login, .z_logout { font-size: 14px; color: #fff;}
+
+/*==== pangzi ======*/
+/*index*/
+.z_font_box { width: 140px; margin-right: 0;}
+.z_font { font-size: 16px; line-height: 1.8;}
+.z_img img { width: 49px !important; height: 49px !important; margin-top: -5px;}
+
+

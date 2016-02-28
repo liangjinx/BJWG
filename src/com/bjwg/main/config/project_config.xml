@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configInfo>
+
+    <info name="projectName" value="BJWG" title="八戒王国项目" />
+    
+	
+	<!-- 上传附件地址 ：用户头像存储地址 相对路径 -->
+	<info name="upload_head_img_path" value="/headImgFile"></info>
+	
+	
+	<!-- 上传附件地址 ：用户的邀请码二维码图片地址 相对路径 -->
+	<info name="upload_invite_code_path" value="/invite_code_img"></info>
+	
+	<!-- 萤石API接口获取时间戳地址 -->
+	<info name="YS_get_time_api_url" value="https://open.ys7.com/api/time/get"></info>
+	<!-- 萤石web应用的key -->
+	<info name="YS_web_key" value="37352cf002814dbb8d3fcf6f099d94a6"></info>
+	<!-- 萤石web应用的secretkey -->
+	<info name="YS_web_secretkey" value="5441046562d0dfc4730ad5923a7d1ab0"></info>
+	<!-- 萤石API接口公用调用地址 -->
+	<info name="YS_api_url" value="https://open.ys7.com/api/method"></info>
+	
+	<!-- 该配置只存在于测试环境，正式环境不需要，且不能加-->
+	<info name="test" value="yes"></info>
+	 
+</configInfo>

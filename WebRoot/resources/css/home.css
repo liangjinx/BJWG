@@ -1,0 +1,286 @@
+/*
+* 我的银行卡
+*/
+html {font-size:10px;}
+body {position:relative; font-size:1.6rem; color:#615868;}
+.c-gray {color:#979698}
+.c-highlight {color:#f60;}
+
+
+.home-wrap, .home-container {position:absolute; top:0; bottom:0; left:0; right:0; max-width:640px; font-family:"Microsoft YaHei";}
+
+.home-container {overflow:hidden;}
+.home-container.day {background-color:#2bbceb;}
+.home-container.night {background-color:#03095b;}
+
+.camera {padding-top:10px;  /*visibility: hidden;*/}
+.camera .to-camera {position:relative; z-index:15; display:block; width:3.5rem; height:3.5rem; margin-left:auto; margin-right:5%; background:url(../images/camera.png) no-repeat; background-size:100%;}
+
+
+.aster {position:relative; padding-left:40%; top:-2rem; height:6.5rem;}
+.aster img {display:block;}
+.home-container.day .aster img {width:6.5rem}
+.home-container.night .aster img {width:3.5rem}
+
+
+.home-container.day .small-cloud {position:absolute; width:5rem; height:2.5rem; background:url(../images/small-cloud.png) no-repeat; background-size:100% 100%;bottom:0; right:25%; -webkit-animation:cloud_small 30s linear infinite; animation:cloud_small 30s linear infinite;}
+
+
+.bubble-panel {position:relative;}
+.bubble-panel .bubble {display:table-cell; vertical-align:middle; width:3.5rem; height:3.5rem; font-size:1rem; line-height:1.2rem; color:#fff; text-align:center; background:url(../images/bubble.png) no-repeat; background-size:100%;}
+
+
+.state-bar {position:relative; padding-left:20px; top:-10rem; z-index:10;}
+.bubble-panel {width:12.5rem; margin-bottom: 5px; padding-left:2rem; padding-right:2rem;}
+.bubble-panel .r-frame {position:relative; left:18%; display:inline-block; padding-left:1rem; padding-right:1rem; min-width:5.5rem; max-width:12.6rem; text-align:center; color:#fff; background-color:#9fd3f9; border:1px solid #fff; border-radius:1rem; overflow:hidden; -webkit-transform:translate3d(-50%,-20%,0); transform:translate3d(-50%,-20%,0);}
+.gold-num img {width:2.5rem;}
+
+
+
+.mountain {position:absolute; bottom:51%; width:100%; height:0; padding-bottom:31.875%;}
+.mountain:after {content:''; position:absolute; display:block; width:100%; height:0; padding-bottom:31.875%; background:url(../images/mount.png) repeat-x; background-size:100%;}
+
+.home-container.night .mountain:after {background-image:url(../images/mount-night.png)}
+
+/*
+
+.mountain {position:absolute; bottom1:17rem; bottom:89%; width:100%; height:11rem;}
+.mountain:after {content:''; position:absolute; display:block; width:100%; height:11rem; background:url(../images/mount.png) repeat-x; background-size:100%;}
+
+.mountain:after {content:''; position:absolute; display\:block; width:100%; height:8rem; background:url(../images/mount.png) repeat-x; background-size:27rem 8rem;}
+*/
+.home-container.day .big-cloud, .home-container.night .big-cloud {position:absolute; right:-75%; bottom:0; width:44.667rem; height:19rem; background:url(../images/big-cloud.png) no-repeat; background-size:100%; -webkit-animation: cloud_big 120s infinite; animation: cloud_big 120s infinite;}
+
+.home-container.night .big-cloud {height:30rem; background-image:url(../images/star.png);}
+
+/*
+.prairie {position:absolute; bottom:0; width:100%; height:36%;}
+*/
+.prairie {position:absolute; bottom:0; width:100%; height:0; padding-bottom:60%;}
+.prairie .prairie-bg-patch {content:''; position:absolute; width:100%; bottom:0; background-color:#fca63c; height:100%; border-radius:50% 50% 0 0;}
+.prairie .prairie-bg {position:absolute; top: -10rem; bottom:31.5%; height:0; padding-bottom:71.25%; width:100%;}
+
+.prairie .prairie-bg:after {content:''; position:absolute; top:0; height:0; padding-bottom:71.25%; width:100%; background:url(../images/pasture-bg-1.png) no-repeat; background-size:100%;}
+
+
+.prairie .prairie-bg-column {position:absolute; bottom:-1rem; height:0; padding-bottom:47.5%; width:100%; background:url(../images/pasture-bg-2.png) no-repeat; background-size:100%;}
+
+/*
+.prairie .prairie-bg {position:absolute; top:-10rem; height:19rem; width:100%; background:url(../images/pasture-bg-1.png) no-repeat; background-size:27rem 19.5rem;}
+.prairie .prairie-bg-column {position:absolute; bottom:-1rem; height:14rem; width:100%; background:url(../images/pasture-bg-2.png) no-repeat; background-size:27rem 14rem;}
+*/
+
+/* 购买期数提示 */
+.buy-tips {position:absolute; width:12rem; height:10rem; top:-11%; left:23%; background:url(../images/tips-red.png) no-repeat; background-size:100%; -webkit-transform-origin:0% 100%;transform-origin:0% 100%; -webkit-animation1:buy-tips .3s 1s linear both; animation:buy-tips .3s 1s linear both; z-index: 100;}
+.buy-tips .to-buy {display:block; padding-top: 16px; text-align:center; font-size:1.3rem; color:#fff;}
+.buy-tips .to-buy span {display:block; margin-left: 4px; font-size: 1.4rem;}
+
+.fly-pig {position:absolute; right:5%; top:-30%; width:6rem; height:7.5rem; background:url(../images/fly-pig.png) no-repeat; background-size:100%; -webkit-animation:fly-pig 1.5s 1.3s linear; animation:fly-pig 1.5s 1.3s linear;}
+.fly-pig .say-txt {position:absolute; left:-90%; top:-30%; width:7rem; height:4.2rem; text-align:center; padding:12px 12px 5px 5px; font-size:1rem; line-height:1.2rem; color:#5a8ebd; background:url(../images/tips-white.png) no-repeat; background-size:100%;}
+
+/* 树 */
+.tree-1, .tree-2, .tree-3, .tree-4, .tree-5 {position:absolute; background-repeat:no-repeat; background-size:100%;}
+.tree-1 {bottom:52%; right:4%; width:2.5rem; height:4.8rem; background-image:url(../images/tree-1.png);}
+.tree-2 {bottom:53%; right:15%; width:1.4rem; height:3.7rem; background-image:url(../images/tree-2.png);}
+.tree-3 {bottom:56%; left:43%; width:1.3rem; height:4.1rem;  background-image:url(../images/tree-3.png);}
+.tree-4 {bottom:55%; left:38%; width:1.1rem; height:3.5rem; background-image:url(../images/tree-4.png);}
+.tree-5 {bottom:55%; left:2%; width:1.3rem; height:4.1rem; background-image:url(../images/tree-3.png);  z-index:1;}
+
+.piggery {position:absolute; height:100%; width:100%; left:0; bottom:0; padding-bottom:27.5%; font-size:1rem; background-color1:rgba(255,0,255,.5); z-index1:20}
+
+.pig_box {
+	width:70px;
+	height:70px;
+	position:absolute;
+	-webkit-user-select:none;
+	user-select:none;
+}
+
+.pig {
+	width:100%;
+	height:100%;
+	background:url(../images/pig_2.png) no-repeat -12px 0px;
+	background-repeat:no-repeat;
+	background-size:610px;
+	/*background:url(images/back.gif) no-repeat;*/
+	cursor:pointer;
+}
+
+.pig_box .pigsay {
+	background: rgba(255,255,255,.9);
+	border-radius: 50px;
+	color: #222;
+	line-height: 16px;
+	padding: 2px 15px;
+	position: absolute;
+	right: 0;
+	bottom: 65px;
+	min-width: 102px;
+	width: auto;
+	min-height: 36px;
+	font-size: 1rem;
+	visibility: hidden;
+	z-index: 100;
+}
+
+.pig_box .pigsay.visible {
+	visibility: visible;
+}
+
+.pig_box .pigsay:after {
+	content: '';
+	position: absolute;
+	bottom: -4px;
+	left: 25px;
+	width: 0;
+	height: 0;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 4px solid rgba(255,255,255,.75);
+}
+
+
+.pig_box.pig_lt .pig {
+	background-position: -12px -66px;
+}
+
+.pig_box.pig_rt .pig {
+	background-position: -12px 0px;
+}
+
+.pig_box.pig_rt .pigsay:after {
+	left: auto;
+	right: 25px;
+}
+
+
+/* 动画效果 */
+@-webkit-keyframes cloud_small {
+    0%,100% {
+        right: 25%
+    }
+
+    70% {
+        right: 100%;
+        display: none
+    }
+
+    70.01% {
+        right: -136px;
+        display: none
+    }
+
+    90% {
+        right: 0
+    }
+}
+
+@keyframes cloud_small {
+    0%,100% {
+        right: 25%
+    }
+
+    70% {
+        right: 100%;
+        display: none
+    }
+
+    70.01% {
+        right: -136px;
+        display: none
+    }
+
+    90% {
+        right: 0
+    }
+}
+
+@-webkit-keyframes cloud_big {
+    0%,100% {
+        right: -75%
+    }
+
+    70% {
+        right: 90%
+    }
+
+    70.01% {
+        right: -436px;
+        display: none
+    }
+}
+
+@keyframes cloud_big {
+    0%,100% {
+        right: -75%
+    }
+
+    70% {
+        right: 90%
+    }
+
+    70.01% {
+        right: -436px;
+        display: none
+    }
+}
+
+@-webkit-keyframes fly-pig {
+	0%{ -webkit-transform:translate(0,-125%); opacity:0;}
+	20%{ -webkit-transform:translate(-100%,-100%); opacity:1;}
+	40%{ -webkit-transform:translate(0,-75%); opacity:1;}
+	60%{ -webkit-transform:translate(-25%,-50%); opacity:1;}
+	80%{ -webkit-transform:translate(0,-25%); opacity:1;}
+	100%{ -webkit-transform:translate(0,0); opacity:1;}
+}
+
+@keyframes fly-pig {
+	0%{ -webkit-transform:translate(0,-125%); opacity:0;}
+	20%{ -webkit-transform:translate(-70%,-100%); opacity:1;}
+	40%{ -webkit-transform:translate(0,-75%); opacity:1;}
+	60%{ -webkit-transform:translate(-25%,-50%); opacity:1;}
+	80%{ -webkit-transform:translate(0,-25%); opacity:1;}
+	100%{ -webkit-transform:translate(0,0); opacity:1;}
+}
+
+@-webkit-keyframes buy-tips{
+	0%{ -webkit-transform: scale(0.1); opacity:0;}
+	5%{ -webkit-transform: scale(0.1); opacity:1;}
+	80%{ -webkit-transform: scale(1.05); opacity:1;}
+	90%{ -webkit-transform: scale(0.98); opacity:1;}
+	100%{ -webkit-transform: scale(1); opacity:1;}
+}
+
+@keyframes buy-tips{
+	0%{ -webkit-transform: scale(0.1); opacity:0;}
+	5%{ -webkit-transform: scale(0.1); opacity:1;}
+	80%{ -webkit-transform: scale(1.05); opacity:1;}
+	90%{ -webkit-transform: scale(0.98); opacity:1;}
+	100%{ -webkit-transform: scale(1); opacity:1;}
+}
+
+@media screen and (min-width:320px) and (max-height:480px) {
+/*最小宽度768的，所有大于768的，背景白色*/
+	.bubble-panel .r-frame {
+		font-size:1.4rem
+	}
+
+	.prairie {
+		bottom:-4.5rem;
+		
+	}
+}
+
+/*抢猪预告*/
+.yubiao_notice { width: 96%; margin: 0 auto; background-color: #fff; overflow: hidden;}
+.yubiao_notice h4 { width: 100%; height: auto; margin: 0 auto; padding: 10px 0; font-size: 1.6rem; color: #615868; text-align: center; border-bottom: 1px solid #dedede;}
+.yubiao_notice div { width: 90%; font-size: 1.4rem; color: #979698; text-align: left;}
+.yubiao_notice div:nth-of-type(1) { margin: 15px auto 10px;}
+.yubiao_notice div:nth-of-type(2) { margin: 0 auto;}
+
+/*成猪出售*/
+.harvest { width: 100%; background-color: #fff; overflow: hidden;}
+.harvest h4 { width: 100%; margin: 15px auto 5px; font-size: 2.0rem; color: #615868; text-align: center;}
+.harvest div { width: 90%; margin: 0 auto; line-height: 24px; font-size: 1.6rem; color: #979698; text-align: left;}
+.harvest a { display: block; width: 120px; height: 50px; line-height: 50px; margin: 15px auto; font-size: 1.8rem; color: #fff; text-align: center; border: none; -webkit-border-radius: 3px;-moz-border-radius: 3px; border-radius: 3px; background-color: #3dbd6d;}
+
